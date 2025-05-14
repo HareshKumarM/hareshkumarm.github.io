@@ -3,76 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Haresh Kumar M">
-    <meta name="description" content="Digital clock showing current time across multiple time zones.">
-    <title>Digital Clock - Multi Time Zones</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #282c34;
-            color: white;
-        }
-        h1 {
-            margin-top: 20px;
-        }
-        .clock-container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-top: 30px;
-        }
-        .clock {
-            font-size: 1.5em;
-            padding: 10px;
-            border: 2px solid white;
-            border-radius: 10px;
-            background-color: #3b3f47;
-            width: fit-content;
-            margin: 0 auto;
-        }
-        .timezone {
-            font-size: 0.9em;
-            color: #b3b3b3;
-        }
-    </style>
+    <meta http-equiv="refresh" content="0; url=https://leadgendata.github.io/" />
+    <title>Redirecting...</title>
 </head>
 <body>
-    <h1>Digital Clock - Multi Time Zones</h1>
-    <div class="clock-container">
-        <div class="clock">
-            <div id="utc-time"></div>
-            <div class="timezone">UTC</div>
-        </div>
-        <div class="clock">
-            <div id="ist-time"></div>
-            <div class="timezone">Indian Standard Time (IST)</div>
-        </div>
-        <div class="clock">
-            <div id="est-time"></div>
-            <div class="timezone">Eastern Standard Time (EST)</div>
-        </div>
-        <div class="clock">
-            <div id="pst-time"></div>
-            <div class="timezone">Pacific Standard Time (PST)</div>
-        </div>
-    </div>
-
-    <script>
-        function updateTime() {
-            const utcTime = new Date();
-            const istTime = new Date(utcTime.getTime() + (5 * 60 + 30) * 60 * 1000); // IST = UTC + 5:30
-            const estTime = new Date(utcTime.getTime() - (5 * 60) * 60 * 1000); // EST = UTC - 5:00
-            const pstTime = new Date(utcTime.getTime() - (8 * 60) * 60 * 1000); // PST = UTC - 8:00
-
-            document.getElementById('utc-time').textContent = utcTime.toISOString().slice(11, 19); // Display HH:MM:SS
-            document.getElementById('ist-time').textContent = istTime.toTimeString().slice(0, 8); // Display HH:MM:SS
-            document.getElementById('est-time').textContent = estTime.toTimeString().slice(0, 8); // Display HH:MM:SS
-            document.getElementById('pst-time').textContent = pstTime.toTimeString().slice(0, 8); // Display HH:MM:SS
-        }
-
-        setInterval(updateTime, 1000); // Update every second
-        updateTime(); // Initialize immediately
-    </script>
+    <p>If you are not redirected automatically, follow this <a href="https://leadgendata.github.io/">link</a>.</p>
 </body>
 </html>
